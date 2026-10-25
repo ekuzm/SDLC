@@ -1,0 +1,32 @@
+{
+  "tool": "SysML v2 Pilot Implementation 0.62.0",
+  "validation": "All source files loaded together without kernel errors",
+  "sources": {
+    "balance.sysml": "a6e6a8c3f8759b631a8b3293b76955c4e0d55bf18bbd82e6d4eba051e8931c77",
+    "ui-kit.sysml": "bfd8290e86a0b2fcf50f4306c8f43a8976ff05d30d55f0bfd695cbd9ef8b60e9",
+    "context.sysml": "8e8a8c2d49a24567eb2d694e3f965606e912d1220a34693bafb249fd89150aa2",
+    "use-cases.sysml": "0923f84425420a037042fb31db94a1396f0e40b06a1049deee7fe1e58b0aa130",
+    "ui-01-auth.sysml": "aa2fa5f8dd281dbbb6f28fc9ae89a1b5721bea5b90d0cfd3c193e53ef193fc1c",
+    "ui-02-overview.sysml": "47b6cfe85ec8f9a97772fb0696e6d35cbd1d61782b882bafea66b23fb3dee52c",
+    "ui-03-operations.sysml": "656865757834f8de799d2ca5124d860b0ebd9bf2047f20a018ea2ab4e8c6cea1",
+    "ui-04-budget.sysml": "b38daf1ab73249a1ba59f5f888d70fdd8fa7a5fb8d8e1d393a6de83131b2cd3f",
+    "ui-05-payments.sysml": "460b0eae0539fcefb2034a5cb5c9d873b4bf247c63bba91d77ec73b77a620d17",
+    "ui-06-forecast.sysml": "dc749bd370f200c3d56a1d80b09041e66156a4e8b0655ab9787c7fb13323c61f"
+  },
+  "tooling": {
+    "views.json": "4e2a8f34fcbacfa3a21b943ffff2048098d412945483041983d9350815e880a8",
+    "render-all.sh": "719a55070ac8c68df8e4cf7d00de41bece5de34086c8314ae02576b83893006c",
+    "render.py": "aad71ef1130c77c5a064f08a873947b75eb664e9076b3b262c7bfeb02123ae63",
+    "Dockerfile": "bb74cdde2a2fbabaa9b9499d3e035cd9ff7825a87dd1464b89c26d98f72f1e86"
+  },
+  "images": {
+    "context.png": "de2e929ea751a855c49dce9837ac484bbee96b3802b0b48367921ca5885a7863",
+    "use-cases.png": "081304cc196271ac1628b6c374d9ade061c8197b5453e608e70343553ddb9bcb",
+    "ui-01-auth.png": "ac704c9b374d649ff004ae14eb7a989c1a439a61c5b96ca9bfdf27101b17f77f",
+    "ui-02-overview.png": "43c92222def63876a35058e75f22bb89f2d12cda482f3839ae34d013230bc9af",
+    "ui-03-operations.png": "8b477b722a86566ab42f697abcc0ab4a5213b279a489f7795a17e865074e0d39",
+    "ui-04-budget.png": "fb0b274f3e3ca38a69a1c7fdd5069beb78e04b256a814c1d73b3ffadeb993616",
+    "ui-05-payments.png": "7d42d9ff236329488f39ed80887f978430bce369b40a3e4c38d7ecf59ce2f5d5",
+    "ui-06-forecast.png": "28b3440d216880c583e435a08beac54c91c44063c06e5d9ecc5caf92681e0a16"
+  }
+}

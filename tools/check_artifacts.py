@@ -2,7 +2,7 @@
 from pathlib import Path
 from decimal import Decimal, ROUND_HALF_UP
 from datetime import date
-import json,re,calendar
+import json,re,calendar,hashlib
 R=Path(__file__).resolve().parents[1];S=R/'srs'
 req=json.loads((S/'data/requirements.json').read_text());srs=(S/'srs.md').read_text();model=(S/'sysml/balance.sysml').read_text();scenarios=(S/'verification/scenarios.md').read_text()
 ids=[r['id'] for r in req];assert len(ids)==len(set(ids))==37
@@ -14,13 +14,31 @@ for r in req:
  assert f"| {r['id']} |" in srs
  assert r['statement'] in srs and r['statement'] in model
  assert all(c in srs and c in scenarios for c in r['criteria'])
-for file in [S/'srs.md',S/'review/interview.md',S/'review/review.md',S/'sysml/README.md']:
+def heading_anchors(text):
+ return {re.sub(r'[^\w\- ]','',h.lower()).replace(' ','-') for h in re.findall(r'^#{1,6} (.+)$',text,re.M)}
+for file in [S/'srs.md',S/'sysml/README.md',R/'README.md',S/'verification/document-checks.md']:
  for link in re.findall(r'\]\(([^)]+)\)',file.read_text()):
-  if not link.startswith(('https://','http://','#')):assert (file.parent/link.split('#')[0]).exists(),(file,link)
-for fig in ['functional-requirements','quality-requirements']:
- svg=(S/f'sysml/views/{fig}.svg').read_text()
- expected=[r['id'] for r in req if (r['area']=='FUNC')==(fig=='functional-requirements')]
- assert all(x in svg for x in expected)
+  if link.startswith(('https://','http://')):continue
+  path,separator,anchor=link.partition('#')
+  target=file.parent/path if path else file
+  assert target.exists(),(file,link)
+  if separator and target.suffix=='.md':assert anchor in heading_anchors(target.read_text()),(file,link)
+views=json.loads((S/'sysml/tools/views.json').read_text())
+assert len(views)==8
+manifest=json.loads((S/'sysml/tools/render-manifest.json').read_text())
+for filename,digest in manifest['sources'].items():
+ assert hashlib.sha256((S/'sysml'/filename).read_bytes()).hexdigest()==digest,filename
+for filename,digest in manifest['tooling'].items():
+ assert hashlib.sha256((S/'sysml/tools'/filename).read_bytes()).hexdigest()==digest,filename
+for v in views:
+ filename=v['name']+'.png'
+ assert (S/'images'/filename).read_bytes().startswith(b'\x89PNG\r\n\x1a\n')
+ assert hashlib.sha256((S/'images'/filename).read_bytes()).hexdigest()==manifest['images'][filename],filename
+ assert v['file'] in manifest['sources']
+trace=(S/'sysml/use-cases.sysml').read_text()
+for r in req:
+ if r['area']=='FUNC':assert '::'+r['id'].replace('-','_')+';' in trace
+assert not (S/'mockups').exists() and not (S/'img').exists()
 D=Decimal
 def money(x):return D(x).quantize(D('.01'),rounding=ROUND_HALF_UP)
 def end(b,i,p,e,l,days):return money(D(b)+D(i)-D(p)-D(e)/D(l)*D(days))
@@ -54,3 +72,5 @@ checks={
 assert all(checks.values()),checks
 print(f'PASS: {len(ids)} requirements match SRS, SysML, acceptance scenarios and matrix; links exist.')
 print(f'PASS: {len(checks)} arithmetic/calendar checks. Duplicate-request behavior F08 remains planned for application tests.')
+
+print('PASS: 8 Pilot exports match source hashes; navigation links and functional traceability checked.')

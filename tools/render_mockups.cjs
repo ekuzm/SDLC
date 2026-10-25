@@ -1,3 +1,0 @@
-const { chromium }=require('playwright');
-const path=require('path');
-(async()=>{const browser=await chromium.launch({headless:true});const page=await browser.newPage({viewport:{width:1440,height:1024},deviceScaleFactor:1.5});for(const name of ['dashboard','operations','budget','scheduled','forecast','no-history','input-error','empty']){await page.goto('file://'+path.resolve(__dirname,'../srs/mockups/'+name+'.html'));await page.locator('.shell').screenshot({path:path.resolve(__dirname,'../srs/img/'+name+'.png')});console.log(name,await page.locator('body').boundingBox());}await browser.close();})();

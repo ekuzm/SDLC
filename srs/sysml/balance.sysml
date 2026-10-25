@@ -1,5 +1,5 @@
 package Balance {
-    doc /* Баланс. Требования версии 0.2. Связи satisfy обозначают
+    doc /* Баланс. Требования версии 0.3. Связи satisfy обозначают
         проектное назначение, а не результат проверки реализации. */
     private import ScalarValues::*;
 
@@ -79,7 +79,7 @@ package Balance {
         }
         package Forecasting {
             requirement <'REQ-FUNC-014'> REQ_FUNC_014 : ProductRequirement {
-                doc /* Прогноз остатка. Система должна оценивать остаток на конец текущего месяца по правилам F1–F4 раздела 3.2.1. */
+                doc /* Прогноз остатка. Система должна оценивать остаток на конец текущего месяца по правилам F1–F4 раздела 3.2.8. */
                 attribute :>> priority = "Must";
             }
             requirement <'REQ-FUNC-015'> REQ_FUNC_015 : ProductRequirement {
@@ -219,177 +219,5 @@ package Balance {
         satisfy Requirements::Constraints::REQ_PORT_001 by system;
         satisfy Requirements::Constraints::REQ_COST_001 by system;
         satisfy Requirements::Constraints::REQ_CM_001 by system;
-    }
-
-    package Scenarios {
-        use case def Access {
-            doc /* Войти в личный бюджет. */
-            subject product : BalanceSystem;
-            actor owner : BudgetOwner;
-            objective { doc /* Войти в личный бюджет. */ }
-            }
-        dependency from Access to Requirements::Access::REQ_FUNC_001;
-        dependency from Access to Requirements::Access::REQ_FUNC_002;
-        use case def RecordOperation {
-            doc /* Записать и исправить операцию. */
-            subject product : BalanceSystem;
-            actor owner : BudgetOwner;
-            objective { doc /* Записать и исправить операцию. */ }
-            }
-        dependency from RecordOperation to Requirements::Accounting::REQ_FUNC_003;
-        dependency from RecordOperation to Requirements::Accounting::REQ_FUNC_004;
-        dependency from RecordOperation to Requirements::Accounting::REQ_FUNC_005;
-        dependency from RecordOperation to Requirements::Accounting::REQ_FUNC_006;
-        dependency from RecordOperation to Requirements::Accounting::REQ_FUNC_007;
-        dependency from RecordOperation to Requirements::Accounting::REQ_FUNC_008;
-        use case def InspectBudget {
-            doc /* Просмотреть бюджет и аналитику. */
-            subject product : BalanceSystem;
-            actor owner : BudgetOwner;
-            objective { doc /* Просмотреть бюджет и аналитику. */ }
-            }
-        dependency from InspectBudget to Requirements::Analysis::REQ_FUNC_009;
-        dependency from InspectBudget to Requirements::Analysis::REQ_FUNC_010;
-        use case def SetLimits {
-            doc /* Установить лимиты категорий. */
-            subject product : BalanceSystem;
-            actor owner : BudgetOwner;
-            objective { doc /* Установить лимиты категорий. */ }
-            }
-        dependency from SetLimits to Requirements::Planning::REQ_FUNC_011;
-        use case def ManagePayments {
-            doc /* Запланировать и подтвердить платёж. */
-            subject product : BalanceSystem;
-            actor owner : BudgetOwner;
-            objective { doc /* Запланировать и подтвердить платёж. */ }
-            }
-        dependency from ManagePayments to Requirements::Planning::REQ_FUNC_012;
-        dependency from ManagePayments to Requirements::Planning::REQ_FUNC_013;
-        dependency from ManagePayments to Requirements::Planning::REQ_FUNC_018;
-        use case def Forecast {
-            doc /* Получить и проверить оба прогноза. */
-            subject product : BalanceSystem;
-            actor owner : BudgetOwner;
-            objective { doc /* Получить и проверить оба прогноза. */ }
-            }
-        dependency from Forecast to Requirements::Forecasting::REQ_FUNC_014;
-        dependency from Forecast to Requirements::Forecasting::REQ_FUNC_015;
-        dependency from Forecast to Requirements::Forecasting::REQ_FUNC_016;
-        dependency from Forecast to Requirements::Forecasting::REQ_FUNC_017;
-    }
-
-    package UserInterface {
-        part def Control { attribute label : String; }
-        part def InputField :> Control;
-        part def Button :> Control;
-        part def Screen {
-            attribute label : String;
-            attribute mockup : String;
-        }
-        part overview : Screen {
-            attribute :>> label = "Обзор бюджета";
-            attribute :>> mockup = "../mockups/dashboard.html";
-            part addOperation : Button { attribute :>> label = "Добавить операцию"; }
-        }
-        part operations : Screen {
-            attribute :>> label = "Операции";
-            attribute :>> mockup = "../mockups/operations.html";
-            part amount : InputField { attribute :>> label = "Сумма BYN"; }
-            part date : InputField { attribute :>> label = "Дата"; }
-            part category : InputField { attribute :>> label = "Категория"; }
-            part operationComment : InputField { attribute :>> label = "Комментарий"; }
-            part save : Button { attribute :>> label = "Сохранить операцию"; }
-        }
-        part budget : Screen {
-            attribute :>> label = "Категории и лимиты";
-            attribute :>> mockup = "../mockups/budget.html";
-            part month : InputField { attribute :>> label = "Месяц"; }
-            part limit : InputField { attribute :>> label = "Лимит BYN"; }
-        }
-        part scheduled : Screen {
-            attribute :>> label = "Плановые платежи";
-            attribute :>> mockup = "../mockups/scheduled.html";
-            part confirm : Button { attribute :>> label = "Подтвердить платёж"; }
-        }
-        part forecast : Screen {
-            attribute :>> label = "Аналитика и прогноз";
-            attribute :>> mockup = "../mockups/forecast.html";
-            part history : Control { attribute :>> label = "Период истории"; }
-            part monthEnd : Control { attribute :>> label = "Остаток к концу месяца"; }
-            part nextMonth : Control { attribute :>> label = "Расходы следующего месяца"; }
-        }
-        item def OpenOperations;
-        item def OpenBudget;
-        item def OpenScheduled;
-        item def OpenForecast;
-        item def OpenOverview;
-        item def SubmitOperation;
-        item def CorrectInput;
-        item def SubmitValidOperation;
-        state def Navigation {
-            entry; then dashboard;
-            state dashboard;
-            state operationList;
-            state budgetLimits;
-            state scheduledPayments;
-            state analysisScreen;
-            transition first dashboard accept OpenOperations then operationList;
-            transition first dashboard accept OpenBudget then budgetLimits;
-            transition first dashboard accept OpenScheduled then scheduledPayments;
-            transition first dashboard accept OpenForecast then analysisScreen;
-            transition first operationList accept OpenOverview then dashboard;
-            transition first budgetLimits accept OpenOverview then dashboard;
-            transition first scheduledPayments accept OpenOverview then dashboard;
-            transition first analysisScreen accept OpenOverview then dashboard;
-        }
-        state def OperationForm {
-            entry; then editing;
-            state editing;
-            state invalidInput;
-            state saved;
-            transition first editing accept SubmitOperation then invalidInput;
-            transition first invalidInput accept CorrectInput then editing;
-            transition first editing accept SubmitValidOperation then saved;
-        }
-        dependency from overview to Scenarios::InspectBudget;
-        dependency from operations to Scenarios::RecordOperation;
-        dependency from budget to Scenarios::SetLimits;
-        dependency from scheduled to Scenarios::ManagePayments;
-        dependency from forecast to Scenarios::Forecast;
-    }
-
-    package Domain {
-        item def Category { attribute name : String; attribute kind : String; attribute archived : Boolean; }
-        item def Operation {
-            attribute amountKopecks : Integer;
-            attribute date : String;
-            ref item category : Category;
-        }
-        item def PlannedOccurrence {
-            attribute dueDate : String;
-            attribute status : String;
-            ref item operation : Operation[0..1];
-        }
-        item def RecurringRule {
-            attribute dayOfMonth : Integer;
-            item occurrences : PlannedOccurrence[0..*];
-        }
-        item def CategoryLimit {
-            attribute month : String;
-            attribute amountKopecks : Integer;
-            ref item category : Category;
-        }
-        item def Budget {
-            attribute startDate : String;
-            attribute initialKopecks : Integer;
-            item categories : Category[0..*];
-            item operations : Operation[0..*];
-            item limits : CategoryLimit[0..*];
-            item rules : RecurringRule[0..*];
-        }
-        item def User {
-            attribute email : String;
-            item budget : Budget;
-        }
     }
 }

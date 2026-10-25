@@ -1,0 +1,58 @@
+[
+  {
+    "file": "context.sysml",
+    "name": "context",
+    "element": "Context::ctx",
+    "view": "interconnection",
+    "wire": false
+  },
+  {
+    "file": "use-cases.sysml",
+    "name": "use-cases",
+    "element": "BalanceUseCases",
+    "view": "case",
+    "wire": false
+  },
+  {
+    "file": "ui-01-auth.sysml",
+    "name": "ui-01-auth",
+    "element": "UI_01_Auth::auth",
+    "view": "interconnection",
+    "wire": true
+  },
+  {
+    "file": "ui-02-overview.sysml",
+    "name": "ui-02-overview",
+    "element": "UI_02_Overview::overview",
+    "view": "interconnection",
+    "wire": true
+  },
+  {
+    "file": "ui-03-operations.sysml",
+    "name": "ui-03-operations",
+    "element": "UI_03_Operations::operations",
+    "view": "interconnection",
+    "wire": true
+  },
+  {
+    "file": "ui-04-budget.sysml",
+    "name": "ui-04-budget",
+    "element": "UI_04_Budget::budget",
+    "view": "interconnection",
+    "wire": true
+  },
+  {
+    "file": "ui-05-payments.sysml",
+    "name": "ui-05-payments",
+    "element": "UI_05_Payments::payments",
+    "view": "interconnection",
+    "wire": true
+  },
+  {
+    "file": "ui-06-forecast.sysml",
+    "name": "ui-06-forecast",
+    "element": "UI_06_Forecast::forecast",
+    "view": "interconnection",
+    "wire": true
+  }
+]

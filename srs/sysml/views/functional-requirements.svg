@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1385" viewBox="0 0 1120 1385"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#78919f"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text x="36" y="44" font-family="Arial" font-size="25" font-weight="bold" fill="#17394b">Функциональные требования</text>
+<text x="36" y="72" font-family="Arial" font-size="14" fill="#617c8b">Проекция пакетов Balance::Requirements · текстовая модель SysML v2 · SRS 0.2</text>
+<rect x="30" y="141.0" width="235" height="65" rx="8" fill="#f5f8fa" stroke="#afc5ce"/>
+<text x="44" y="164.0" font-family="Arial" font-size="12" font-weight="normal" fill="#64808d" text-anchor="start">package</text>
+<text x="44" y="189.0" font-family="Arial" font-size="17" font-weight="bold" fill="#203b4c" text-anchor="start">Доступ</text>
+<path d="M265 175.0 L335 136" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="110" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="130" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-FUNC-001</text>
+<text x="350" y="151" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Регистрация</text>
+<path d="M265 175.0 L335 201" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="175" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="195" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-FUNC-002</text>
+<text x="350" y="216" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Вход и выход</text>
+<rect x="30" y="421.0" width="235" height="65" rx="8" fill="#f5f8fa" stroke="#afc5ce"/>
+<text x="44" y="444.0" font-family="Arial" font-size="12" font-weight="normal" fill="#64808d" text-anchor="start">package</text>
+<text x="44" y="469.0" font-family="Arial" font-size="17" font-weight="bold" fill="#203b4c" text-anchor="start">Учёт</text>
+<path d="M265 455.0 L335 286" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="260" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="280" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-FUNC-003</text>
+<text x="350" y="301" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Начало учёта</text>
+<path d="M265 455.0 L335 351" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="325" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="345" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-FUNC-004</text>
+<text x="350" y="366" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Категории</text>
+<path d="M265 455.0 L335 416" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="390" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="410" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-FUNC-005</text>
+<text x="350" y="431" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Добавление операции</text>
+<path d="M265 455.0 L335 481" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="455" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="475" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-FUNC-006</text>
+<text x="350" y="496" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Изменение операции</text>
+<path d="M265 455.0 L335 546" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="520" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="540" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-FUNC-007</text>
+<text x="350" y="561" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Удаление операции</text>
+<path d="M265 455.0 L335 611" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="585" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="605" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-FUNC-008</text>
+<text x="350" y="626" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Поиск и фильтры</text>
+<rect x="30" y="701.0" width="235" height="65" rx="8" fill="#f5f8fa" stroke="#afc5ce"/>
+<text x="44" y="724.0" font-family="Arial" font-size="12" font-weight="normal" fill="#64808d" text-anchor="start">package</text>
+<text x="44" y="749.0" font-family="Arial" font-size="17" font-weight="bold" fill="#203b4c" text-anchor="start">Анализ</text>
+<path d="M265 735.0 L335 696" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="670" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="690" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-FUNC-009</text>
+<text x="350" y="711" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Обзор бюджета</text>
+<path d="M265 735.0 L335 761" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="735" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="755" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-FUNC-010</text>
+<text x="350" y="776" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Аналитика расходов</text>
+<rect x="30" y="916.0" width="235" height="65" rx="8" fill="#f5f8fa" stroke="#afc5ce"/>
+<text x="44" y="939.0" font-family="Arial" font-size="12" font-weight="normal" fill="#64808d" text-anchor="start">package</text>
+<text x="44" y="964.0" font-family="Arial" font-size="17" font-weight="bold" fill="#203b4c" text-anchor="start">Планирование</text>
+<path d="M265 950.0 L335 846" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="820" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="840" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-FUNC-011</text>
+<text x="350" y="861" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Лимиты категорий</text>
+<path d="M265 950.0 L335 911" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="885" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="905" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-FUNC-012</text>
+<text x="350" y="926" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Регулярные платежи</text>
+<path d="M265 950.0 L335 976" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="950" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="970" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-FUNC-013</text>
+<text x="350" y="991" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Исполнение платежа</text>
+<path d="M265 950.0 L335 1041" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="1015" width="745" height="53" rx="6" fill="#eaf5f0" stroke="#b5c8d0"/>
+<text x="350" y="1035" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-FUNC-018</text>
+<text x="350" y="1056" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Просроченный плановый платёж</text>
+<rect x="30" y="1196.0" width="235" height="65" rx="8" fill="#f5f8fa" stroke="#afc5ce"/>
+<text x="44" y="1219.0" font-family="Arial" font-size="12" font-weight="normal" fill="#64808d" text-anchor="start">package</text>
+<text x="44" y="1244.0" font-family="Arial" font-size="17" font-weight="bold" fill="#203b4c" text-anchor="start">Прогноз</text>
+<path d="M265 1230.0 L335 1126" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="1100" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="1120" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-FUNC-014</text>
+<text x="350" y="1141" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Прогноз остатка</text>
+<path d="M265 1230.0 L335 1191" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="1165" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="1185" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-FUNC-015</text>
+<text x="350" y="1206" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Прогноз расходов</text>
+<path d="M265 1230.0 L335 1256" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="1230" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="1250" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-FUNC-016</text>
+<text x="350" y="1271" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">История для прогноза</text>
+<path d="M265 1230.0 L335 1321" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="1295" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="1315" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-FUNC-017</text>
+<text x="350" y="1336" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Объяснение прогноза</text>
+</svg>

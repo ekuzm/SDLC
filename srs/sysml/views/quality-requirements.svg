@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1430" viewBox="0 0 1120 1430"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#78919f"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text x="36" y="44" font-family="Arial" font-size="25" font-weight="bold" fill="#17394b">Нефункциональные требования</text>
+<text x="36" y="72" font-family="Arial" font-size="14" fill="#617c8b">Проекция пакетов Balance::Requirements · текстовая модель SysML v2 · SRS 0.2</text>
+<rect x="30" y="173.5" width="235" height="65" rx="8" fill="#f5f8fa" stroke="#afc5ce"/>
+<text x="44" y="196.5" font-family="Arial" font-size="12" font-weight="normal" fill="#64808d" text-anchor="start">package</text>
+<text x="44" y="221.5" font-family="Arial" font-size="17" font-weight="bold" fill="#203b4c" text-anchor="start">Интерфейсы</text>
+<path d="M265 207.5 L335 136" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="110" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="130" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-INT-001</text>
+<text x="350" y="151" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Адаптивный интерфейс</text>
+<path d="M265 207.5 L335 201" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="175" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="195" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-INT-002</text>
+<text x="350" y="216" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Состояния экранов</text>
+<path d="M265 207.5 L335 266" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="240" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="260" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-INT-003</text>
+<text x="350" y="281" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Веб-доступ</text>
+<rect x="30" y="486.0" width="235" height="65" rx="8" fill="#f5f8fa" stroke="#afc5ce"/>
+<text x="44" y="509.0" font-family="Arial" font-size="12" font-weight="normal" fill="#64808d" text-anchor="start">package</text>
+<text x="44" y="534.0" font-family="Arial" font-size="17" font-weight="bold" fill="#203b4c" text-anchor="start">Качество</text>
+<path d="M265 520.0 L335 351" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="325" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="345" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-PERF-001</text>
+<text x="350" y="366" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Отклик списков</text>
+<path d="M265 520.0 L335 416" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="390" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="410" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-PERF-002</text>
+<text x="350" y="431" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Расчёт прогноза</text>
+<path d="M265 520.0 L335 481" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="455" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="475" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-REL-001</text>
+<text x="350" y="496" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Целостность операций</text>
+<path d="M265 520.0 L335 546" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="520" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="540" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-REL-002</text>
+<text x="350" y="561" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Резервное копирование</text>
+<path d="M265 520.0 L335 611" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="585" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="605" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-AVAIL-001</text>
+<text x="350" y="626" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Контроль работоспособности</text>
+<path d="M265 520.0 L335 676" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="650" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="670" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-OBS-001</text>
+<text x="350" y="691" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Диагностика ошибок</text>
+<rect x="30" y="798.5" width="235" height="65" rx="8" fill="#f5f8fa" stroke="#afc5ce"/>
+<text x="44" y="821.5" font-family="Arial" font-size="12" font-weight="normal" fill="#64808d" text-anchor="start">package</text>
+<text x="44" y="846.5" font-family="Arial" font-size="17" font-weight="bold" fill="#203b4c" text-anchor="start">Безопасность</text>
+<path d="M265 832.5 L335 761" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="735" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="755" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-SEC-001</text>
+<text x="350" y="776" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Защита паролей</text>
+<path d="M265 832.5 L335 826" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="800" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="820" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-SEC-002</text>
+<text x="350" y="841" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Защита сеанса</text>
+<path d="M265 832.5 L335 891" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="865" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="885" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-SEC-003</text>
+<text x="350" y="906" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Изоляция данных</text>
+<rect x="30" y="1143.5" width="235" height="65" rx="8" fill="#f5f8fa" stroke="#afc5ce"/>
+<text x="44" y="1166.5" font-family="Arial" font-size="12" font-weight="normal" fill="#64808d" text-anchor="start">package</text>
+<text x="44" y="1191.5" font-family="Arial" font-size="17" font-weight="bold" fill="#203b4c" text-anchor="start">Ограничения</text>
+<path d="M265 1177.5 L335 976" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="950" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="970" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-COMP-001</text>
+<text x="350" y="991" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Прозрачность назначения</text>
+<path d="M265 1177.5 L335 1041" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="1015" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="1035" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-INST-001</text>
+<text x="350" y="1056" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Воспроизводимый запуск</text>
+<path d="M265 1177.5 L335 1106" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="1080" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="1100" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-BUILD-001</text>
+<text x="350" y="1121" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Воспроизводимая сборка</text>
+<path d="M265 1177.5 L335 1171" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="1145" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="1165" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-MAINT-001</text>
+<text x="350" y="1186" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Проверка финансовой логики</text>
+<path d="M265 1177.5 L335 1236" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="1210" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="1230" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-PORT-001</text>
+<text x="350" y="1251" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Технологические ограничения</text>
+<path d="M265 1177.5 L335 1301" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="1275" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="1295" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-COST-001</text>
+<text x="350" y="1316" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Доступность демонстрации</text>
+<path d="M265 1177.5 L335 1366" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="335" y="1340" width="745" height="53" rx="6" fill="#f7f9fa" stroke="#b5c8d0"/>
+<text x="350" y="1360" font-family="Arial" font-size="13" font-weight="bold" fill="#1c776c" text-anchor="start">REQ-CM-001</text>
+<text x="350" y="1381" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Управление требованиями</text>
+</svg>

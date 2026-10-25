@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1010" viewBox="0 0 1120 1010"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#78919f"/></marker></defs><rect width="100%" height="100%" fill="white"/>
+<text x="36" y="44" font-family="Arial" font-size="25" font-weight="bold" fill="#17394b">Модель предметной области</text>
+<text x="36" y="72" font-family="Arial" font-size="14" fill="#617c8b">Balance::Domain · логические данные и связи · без привязки к СУБД</text>
+<rect x="35" y="110" width="300" height="110" rx="8" fill="#f5f8fa" stroke="#afc5ce"/>
+<text x="49" y="133" font-family="Arial" font-size="12" font-weight="normal" fill="#64808d" text-anchor="start">item def</text>
+<text x="49" y="158" font-family="Arial" font-size="17" font-weight="bold" fill="#203b4c" text-anchor="start">User</text>
+<text x="49" y="180" font-family="Arial" font-size="14" font-weight="normal" fill="#203b4c" text-anchor="start">email; budget[1]</text>
+<rect x="420" y="110" width="650" height="110" rx="8" fill="#eaf5f0" stroke="#afc5ce"/>
+<text x="434" y="133" font-family="Arial" font-size="12" font-weight="normal" fill="#64808d" text-anchor="start">item def</text>
+<text x="434" y="158" font-family="Arial" font-size="17" font-weight="bold" fill="#203b4c" text-anchor="start">Budget</text>
+<text x="434" y="180" font-family="Arial" font-size="14" font-weight="normal" fill="#203b4c" text-anchor="start">startDate; initialKopecks; единый бюджет в BYN</text>
+<rect x="35" y="350" width="300" height="140" rx="8" fill="#f5f8fa" stroke="#afc5ce"/>
+<text x="49" y="373" font-family="Arial" font-size="12" font-weight="normal" fill="#64808d" text-anchor="start">item def</text>
+<text x="49" y="398" font-family="Arial" font-size="17" font-weight="bold" fill="#203b4c" text-anchor="start">Category</text>
+<text x="49" y="420" font-family="Arial" font-size="14" font-weight="normal" fill="#203b4c" text-anchor="start">name; тип доход или расход</text>
+<rect x="420" y="350" width="300" height="140" rx="8" fill="#f5f8fa" stroke="#afc5ce"/>
+<text x="434" y="373" font-family="Arial" font-size="12" font-weight="normal" fill="#64808d" text-anchor="start">item def</text>
+<text x="434" y="398" font-family="Arial" font-size="17" font-weight="bold" fill="#203b4c" text-anchor="start">Operation</text>
+<text x="434" y="420" font-family="Arial" font-size="14" font-weight="normal" fill="#203b4c" text-anchor="start">amountKopecks; date; category</text>
+<rect x="770" y="350" width="300" height="140" rx="8" fill="#f5f8fa" stroke="#afc5ce"/>
+<text x="784" y="373" font-family="Arial" font-size="12" font-weight="normal" fill="#64808d" text-anchor="start">item def</text>
+<text x="784" y="398" font-family="Arial" font-size="17" font-weight="bold" fill="#203b4c" text-anchor="start">CategoryLimit</text>
+<text x="784" y="420" font-family="Arial" font-size="14" font-weight="normal" fill="#203b4c" text-anchor="start">month; amountKopecks; category</text>
+<rect x="35" y="690" width="300" height="150" rx="8" fill="#f5f8fa" stroke="#afc5ce"/>
+<text x="49" y="713" font-family="Arial" font-size="12" font-weight="normal" fill="#64808d" text-anchor="start">item def</text>
+<text x="49" y="738" font-family="Arial" font-size="17" font-weight="bold" fill="#203b4c" text-anchor="start">RecurringRule</text>
+<text x="49" y="760" font-family="Arial" font-size="14" font-weight="normal" fill="#203b4c" text-anchor="start">dayOfMonth; occurrences[0..*]</text>
+<rect x="420" y="690" width="650" height="150" rx="8" fill="#f5f8fa" stroke="#afc5ce"/>
+<text x="434" y="713" font-family="Arial" font-size="12" font-weight="normal" fill="#64808d" text-anchor="start">item def</text>
+<text x="434" y="738" font-family="Arial" font-size="17" font-weight="bold" fill="#203b4c" text-anchor="start">PlannedOccurrence</text>
+<text x="434" y="760" font-family="Arial" font-size="14" font-weight="normal" fill="#203b4c" text-anchor="start">dueDate; status; operation[0..1]</text>
+<path d="M335 162 L420 162" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="382.5" y="154.0" font-family="Arial" font-size="12" font-weight="normal" fill="#203b4c" text-anchor="start">1</text>
+<path d="M480 220 L185 350" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="337.5" y="277.0" font-family="Arial" font-size="12" font-weight="normal" fill="#203b4c" text-anchor="start">0..*</text>
+<path d="M620 220 L570 350" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="600.0" y="277.0" font-family="Arial" font-size="12" font-weight="normal" fill="#203b4c" text-anchor="start">0..*</text>
+<path d="M900 220 L920 350" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="915.0" y="277.0" font-family="Arial" font-size="12" font-weight="normal" fill="#203b4c" text-anchor="start">0..*</text>
+<path d="M420 180 L370 250 L370 650 L185 690" fill="none" stroke="#78919f" marker-end="url(#arrow)"/>
+<path d="M335 760 L420 760" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="382.5" y="752.0" font-family="Arial" font-size="12" font-weight="normal" fill="#203b4c" text-anchor="start">0..*</text>
+<path d="M720 690 L600 490" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="665.0" y="582.0" font-family="Arial" font-size="12" font-weight="normal" fill="#203b4c" text-anchor="start">0..1</text>
+<path d="M420 415 L335 415" fill="none" stroke="#78919f" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="382.5" y="407.0" font-family="Arial" font-size="12" font-weight="normal" fill="#203b4c" text-anchor="start">1</text>
+<text x="36" y="911" font-family="Arial" font-size="19" font-weight="bold" fill="#203b4c" text-anchor="start">Инварианты</text>
+<text x="36" y="945" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Операция и плановое вхождение связываются один к одному.</text>
+<text x="36" y="975" font-family="Arial" font-size="17" font-weight="normal" fill="#203b4c" text-anchor="start">Начальный остаток и планы не являются фактическими доходами.</text>
+</svg>

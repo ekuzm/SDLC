@@ -2,7 +2,7 @@
   "tool": "SysML v2 Pilot Implementation 0.62.0",
   "validation": "All source files loaded together without kernel errors",
   "sources": {
-    "balance.sysml": "a6e6a8c3f8759b631a8b3293b76955c4e0d55bf18bbd82e6d4eba051e8931c77",
+    "balance.sysml": "9fac24af8304d5960228e688b26e30216322226c3ecc6f6c9d04691345469dab",
     "ui-kit.sysml": "bfd8290e86a0b2fcf50f4306c8f43a8976ff05d30d55f0bfd695cbd9ef8b60e9",
     "context.sysml": "8e8a8c2d49a24567eb2d694e3f965606e912d1220a34693bafb249fd89150aa2",
     "use-cases.sysml": "0923f84425420a037042fb31db94a1396f0e40b06a1049deee7fe1e58b0aa130",

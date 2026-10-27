@@ -1,0 +1,23 @@
+name: Check Balance
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: false
+      - run: go vet ./...
+      - run: go test -race -coverprofile=coverage.out ./...
+      - run: go build -trimpath -o /tmp/balance ./cmd/balance
+      - run: CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o /tmp/balance-linux ./cmd/balance
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 tools/check_artifacts.py

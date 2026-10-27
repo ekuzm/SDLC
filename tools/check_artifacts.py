@@ -16,7 +16,7 @@ for r in req:
  assert all(c in srs and c in scenarios for c in r['criteria'])
 def heading_anchors(text):
  return {re.sub(r'[^\w\- ]','',h.lower()).replace(' ','-') for h in re.findall(r'^#{1,6} (.+)$',text,re.M)}
-for file in [S/'srs.md',S/'sysml/README.md',R/'README.md',S/'verification/document-checks.md']:
+for file in [S/'srs.md',S/'sysml/README.md',R/'README.md',S/'verification/document-checks.md',R/'reports/lab3/figures/README.md']:
  for link in re.findall(r'\]\(([^)]+)\)',file.read_text()):
   if link.startswith(('https://','http://')):continue
   path,separator,anchor=link.partition('#')
@@ -39,6 +39,26 @@ trace=(S/'sysml/use-cases.sysml').read_text()
 for r in req:
  if r['area']=='FUNC':assert '::'+r['id'].replace('-','_')+';' in trace
 assert not (S/'mockups').exists() and not (S/'img').exists()
+# The report uses a separate illustrated set in the supplied DOCX style.
+from zipfile import ZipFile
+from xml.etree import ElementTree as ET
+figures=R/'reports/lab3/figures'
+names=['01-use-cases','02-functional','03-quality','04-overview','05-operations','06-categories','07-payments','08-analytics','09-domain']
+assert {p.stem for p in figures.glob('*.svg')}==set(names)
+assert {p.stem for p in figures.glob('*.png')}==set(names)
+for r in req:
+ tree=figures/('02-functional.svg' if r['area']=='FUNC' else '03-quality.svg')
+ assert tree.read_text().count(r['id'])==1,r['id']
+with ZipFile(R/'reports/lab3/Отчёт_ЛР3_Баланс.docx') as doc:
+ xml=ET.fromstring(doc.read('word/document.xml'))
+ ns={'w':'http://schemas.openxmlformats.org/wordprocessingml/2006/main'}
+ text=' '.join(xml.itertext())
+ assert len(xml.findall('.//w:tbl',ns))==6
+ assert all(f'Вопрос {i}.' in text for i in range(1,7))
+ assert not any(t in text for t in ['FreelanceDesk','Могильный','Апанас','Новицкий','srs/mockups'])
+ for i,name in enumerate(names,1):
+  assert doc.read(f'word/media/image{i}.png')==(figures/f'{name}.png').read_bytes(),name
+print('PASS: 9 report figures match DOCX; 37 tree IDs, 6 tables and 6 questions checked.')
 D=Decimal
 def money(x):return D(x).quantize(D('.01'),rounding=ROUND_HALF_UP)
 def end(b,i,p,e,l,days):return money(D(b)+D(i)-D(p)-D(e)/D(l)*D(days))
@@ -71,6 +91,6 @@ checks={
 }
 assert all(checks.values()),checks
 print(f'PASS: {len(ids)} requirements match SRS, SysML, acceptance scenarios and matrix; links exist.')
-print(f'PASS: {len(checks)} arithmetic/calendar checks. Duplicate-request behavior F08 remains planned for application tests.')
+print(f'PASS: {len(checks)} arithmetic/calendar checks. Application behavior F08 is tested separately by go test ./....')
 
 print('PASS: 8 Pilot exports match source hashes; navigation links and functional traceability checked.')

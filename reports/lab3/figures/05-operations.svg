@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1560" viewBox="0 0 1100 780">
+<defs><marker id="arrow" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto"><path d="M1,1 L10,5 L1,9" fill="none" stroke="#64748b" stroke-width="1.4"/></marker></defs>
+<rect x="0" y="0" width="1100" height="780" rx="0" fill="#ffffff" stroke="none"/>
+<rect x="0" y="0" width="1100" height="780" rx="0" fill="#f5f5ef" stroke="none"/>
+<rect x="0" y="0" width="1100" height="96" rx="0" fill="#ffffff" stroke="none"/>
+<rect x="28" y="14" width="31" height="31" rx="10" fill="#245c48" stroke="none"/>
+<rect x="36" y="29" width="3" height="9" rx="1" fill="#f5f5ef" stroke="none"/>
+<rect x="43" y="24" width="3" height="14" rx="1" fill="#f5f5ef" stroke="none"/>
+<rect x="50" y="20" width="3" height="18" rx="1" fill="#f5f5ef" stroke="none"/>
+<text x="70" y="38" font-family="Arial, DejaVu Sans, sans-serif" font-size="26" fill="#245c48" font-weight="700" text-anchor="start">баланс</text>
+<text x="191" y="36" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" fill="#63736a" font-weight="400" text-anchor="start">Личный бюджет</text>
+<rect x="813" y="19" width="58" height="26" rx="13" fill="#e8f0e3" stroke="none"/>
+<text x="842.0" y="37" font-family="Arial, DejaVu Sans, sans-serif" font-size="13" fill="#245c48" font-weight="700" text-anchor="middle">BYN</text>
+<text x="889" y="36" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" fill="#203d32" font-weight="400" text-anchor="start">Мой профиль</text>
+<text x="1068" y="36" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" fill="#63736a" font-weight="400" text-anchor="end">Выйти</text>
+<text x="78.0" y="79" font-family="Arial, DejaVu Sans, sans-serif" font-size="16" fill="#63736a" font-weight="400" text-anchor="middle">Обзор</text>
+<rect x="144" y="58" width="134" height="30" rx="15" fill="#e8f0e3" stroke="none"/>
+<text x="211.0" y="79" font-family="Arial, DejaVu Sans, sans-serif" font-size="16" fill="#245c48" font-weight="700" text-anchor="middle">Операции</text>
+<text x="403.0" y="79" font-family="Arial, DejaVu Sans, sans-serif" font-size="16" fill="#63736a" font-weight="400" text-anchor="middle">Категории и лимиты</text>
+<text x="635.0" y="79" font-family="Arial, DejaVu Sans, sans-serif" font-size="16" fill="#63736a" font-weight="400" text-anchor="middle">Плановые платежи</text>
+<text x="893.5" y="79" font-family="Arial, DejaVu Sans, sans-serif" font-size="16" fill="#63736a" font-weight="400" text-anchor="middle">Аналитика и прогнозы</text>
+<text x="28" y="132" font-family="Arial, DejaVu Sans, sans-serif" font-size="27" fill="#203d32" font-weight="700" text-anchor="start">Операции</text>
+<text x="28" y="157" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" fill="#63736a" font-weight="400" text-anchor="start">Все доходы и расходы в одном списке</text>
+<rect x="878" y="114" width="194" height="38" rx="19" fill="#245c48" stroke="#245c48"/>
+<text x="975.0" y="139" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" fill="#ffffff" font-weight="700" text-anchor="middle">+ Добавить операцию</text>
+<rect x="28" y="177" width="638" height="62" rx="14" fill="#ffffff" stroke="#dce3d9"/>
+<rect x="42" y="189" width="224" height="38" rx="19" fill="#ffffff" stroke="#dce3d9"/>
+<text x="154.0" y="214" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" fill="#245c48" font-weight="700" text-anchor="middle">01.10–26.10.2026 ▾</text>
+<rect x="278" y="189" width="164" height="38" rx="19" fill="#ffffff" stroke="#dce3d9"/>
+<text x="360.0" y="214" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" fill="#245c48" font-weight="700" text-anchor="middle">Все типы ▾</text>
+<rect x="454" y="189" width="198" height="38" rx="19" fill="#ffffff" stroke="#dce3d9"/>
+<text x="553.0" y="214" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" fill="#245c48" font-weight="700" text-anchor="middle">Все категории ▾</text>
+<rect x="28" y="255" width="638" height="338" rx="14" fill="#ffffff" stroke="#dce3d9"/>
+<text x="48" y="286" font-family="Arial, DejaVu Sans, sans-serif" font-size="20" fill="#203d32" font-weight="700" text-anchor="start">Последние операции</text>
+<text x="646" y="286" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" fill="#63736a" font-weight="400" text-anchor="end">Сумма, BYN</text>
+<rect x="38" y="306" width="618" height="58" rx="10" fill="#eef3e8" stroke="none"/>
+<text x="49" y="334" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" fill="#63736a" font-weight="400" text-anchor="start">26 окт</text>
+<text x="127" y="329" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" fill="#203d32" font-weight="700" text-anchor="start">Продукты</text>
+<text x="127" y="351" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" fill="#63736a" font-weight="400" text-anchor="start">Покупка продуктов</text>
+<text x="644" y="335" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" fill="#203d32" font-weight="700" text-anchor="end">−45,50</text>
+<line x1="49" y1="366" x2="645" y2="366" stroke="#dce3d9" stroke-width="1.3" stroke-dasharray=""/>
+<text x="49" y="395" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" fill="#63736a" font-weight="400" text-anchor="start">24 окт</text>
+<text x="127" y="390" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" fill="#203d32" font-weight="700" text-anchor="start">Транспорт</text>
+<text x="127" y="412" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" fill="#63736a" font-weight="400" text-anchor="start">Поездка</text>
+<text x="644" y="396" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" fill="#203d32" font-weight="700" text-anchor="end">−15,00</text>
+<line x1="49" y1="427" x2="645" y2="427" stroke="#dce3d9" stroke-width="1.3" stroke-dasharray=""/>
+<text x="49" y="456" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" fill="#63736a" font-weight="400" text-anchor="start">20 окт</text>
+<text x="127" y="451" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" fill="#203d32" font-weight="700" text-anchor="start">Зарплата</text>
+<text x="127" y="473" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" fill="#63736a" font-weight="400" text-anchor="start">Поступление зарплаты</text>
+<text x="644" y="457" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" fill="#245c48" font-weight="700" text-anchor="end">+1 500,00</text>
+<line x1="49" y1="488" x2="645" y2="488" stroke="#dce3d9" stroke-width="1.3" stroke-dasharray=""/>
+<text x="49" y="517" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" fill="#63736a" font-weight="400" text-anchor="start">15 окт</text>
+<text x="127" y="512" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" fill="#203d32" font-weight="700" text-anchor="start">Жильё</text>
+<text x="127" y="534" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" fill="#63736a" font-weight="400" text-anchor="start">Оплата жилья</text>
+<text x="644" y="518" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" fill="#203d32" font-weight="700" text-anchor="end">−400,00</text>
+<text x="48" y="576" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" fill="#63736a" font-weight="400" text-anchor="start">4 последние записи</text>
+<text x="645" y="576" font-family="Arial, DejaVu Sans, sans-serif" font-size="16" fill="#245c48" font-weight="700" text-anchor="end">‹  1  2  3  ›</text>
+<rect x="686" y="177" width="386" height="416" rx="14" fill="#ffffff" stroke="#dce3d9"/>
+<rect x="707" y="193" width="93" height="26" rx="13" fill="#e8f0e3" stroke="none"/>
+<text x="753.5" y="211" font-family="Arial, DejaVu Sans, sans-serif" font-size="13" fill="#245c48" font-weight="700" text-anchor="middle">Расход</text>
+<text x="1049" y="212" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" fill="#63736a" font-weight="400" text-anchor="end">26 октября</text>
+<text x="707" y="249" font-family="Arial, DejaVu Sans, sans-serif" font-size="22" fill="#203d32" font-weight="700" text-anchor="start">Редактирование операции</text>
+<text x="707" y="279" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" fill="#63736a" font-weight="400" text-anchor="start">Дата</text>
+<rect x="707" y="289" width="160" height="38" rx="9" fill="#ffffff" stroke="#c9d4c5"/>
+<text x="719" y="314" font-family="Arial, DejaVu Sans, sans-serif" font-size="16" fill="#203d32" font-weight="400" text-anchor="start">26.10.2026</text>
+<text x="884" y="279" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" fill="#63736a" font-weight="400" text-anchor="start">Сумма, BYN</text>
+<rect x="884" y="289" width="167" height="38" rx="9" fill="#ffffff" stroke="#b4513b"/>
+<text x="896" y="314" font-family="Arial, DejaVu Sans, sans-serif" font-size="16" fill="#203d32" font-weight="400" text-anchor="start">0,00</text>
+<text x="884" y="349" font-family="Arial, DejaVu Sans, sans-serif" font-size="13" fill="#9c442e" font-weight="400" text-anchor="start">Введите сумму &gt; 0</text>
+<text x="707" y="376" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" fill="#63736a" font-weight="400" text-anchor="start">Категория</text>
+<rect x="707" y="386" width="344" height="38" rx="9" fill="#ffffff" stroke="#c9d4c5"/>
+<text x="719" y="411" font-family="Arial, DejaVu Sans, sans-serif" font-size="16" fill="#203d32" font-weight="400" text-anchor="start">Продукты ▾</text>
+<text x="707" y="451" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" fill="#63736a" font-weight="400" text-anchor="start">Комментарий</text>
+<rect x="707" y="461" width="344" height="38" rx="9" fill="#ffffff" stroke="#c9d4c5"/>
+<text x="719" y="486" font-family="Arial, DejaVu Sans, sans-serif" font-size="16" fill="#203d32" font-weight="400" text-anchor="start">Покупка продуктов</text>
+<rect x="707" y="518" width="159" height="38" rx="19" fill="#245c48" stroke="#245c48"/>
+<text x="786.5" y="543" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" fill="#ffffff" font-weight="700" text-anchor="middle">Сохранить</text>
+<rect x="882" y="518" width="169" height="38" rx="19" fill="#ffffff" stroke="#dce3d9"/>
+<text x="966.5" y="543" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" fill="#245c48" font-weight="700" text-anchor="middle">Отмена</text>
+<text x="707" y="580" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" fill="#a24b35" font-weight="700" text-anchor="start">Удалить операцию</text>
+<text x="28" y="619" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" fill="#63736a" font-weight="700" text-anchor="start">ДРУГИЕ СОСТОЯНИЯ ЭКРАНА</text>
+<rect x="28" y="633" width="474" height="122" rx="14" fill="#eaf0e3" stroke="none"/>
+<text x="48" y="663" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" fill="#203d32" font-weight="700" text-anchor="start">Нет операций за выбранный период</text>
+<text x="48" y="690" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" fill="#63736a" font-weight="400" text-anchor="start">Добавьте первую запись или измените фильтры.</text>
+<text x="48" y="731" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" fill="#245c48" font-weight="700" text-anchor="start">Сбросить фильтры  →</text>
+<rect x="522" y="633" width="550" height="122" rx="14" fill="#fffaf6" stroke="#ead6c6"/>
+<text x="542" y="663" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" fill="#203d32" font-weight="700" text-anchor="start">Удалить расход 45,50 BYN?</text>
+<text x="542" y="690" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" fill="#63736a" font-weight="400" text-anchor="start">Остаток увеличится на 45,50 BYN.</text>
+<rect x="542" y="705" width="131" height="38" rx="19" fill="#a24b35" stroke="#a24b35"/>
+<text x="607.5" y="730" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" fill="#ffffff" font-weight="700" text-anchor="middle">Удалить</text>
+<rect x="686" y="705" width="122" height="38" rx="19" fill="#ffffff" stroke="#dce3d9"/>
+<text x="747.0" y="730" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" fill="#245c48" font-weight="700" text-anchor="middle">Отмена</text>
+<text x="1049" y="732" font-family="Arial, DejaVu Sans, sans-serif" font-size="13" fill="#63736a" font-weight="400" text-anchor="end">Подтверждение</text></svg>

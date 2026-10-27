@@ -4,7 +4,7 @@ import json
 R=Path(__file__).resolve().parents[1]
 req=json.loads((R/'srs/data/requirements.json').read_text())
 text='''package Balance {
-    doc /* Баланс. Требования версии 0.3. Связи satisfy обозначают
+    doc /* Баланс. Требования версии 0.4. Связи satisfy обозначают
         проектное назначение, а не результат проверки реализации. */
     private import ScalarValues::*;
 
